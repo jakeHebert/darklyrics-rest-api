@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script>
+            function redir(){
+                console.log("function fired");
+                console.log(document.getElementById('band').value);
+                document.location = '/lyrics/' + document.getElementById('band').value;
+            }    
+        </script>
+    </head>
+    <body>
+        <div>
+            
+            Band:<br>
+            <input type='text' id='band'>
+            <button onclick='redir()'>Search</button>
+            
+        </div>
+    </body>
+</html>
